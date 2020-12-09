@@ -1,6 +1,6 @@
 M, U, I = 'M', 'U', 'I'
-MI = M+I
-UU = U+U
+MI  = M+I
+UU  = U+U
 III = I*3
 
 
@@ -41,6 +41,9 @@ def rule_gen(theorem, rules):
         for thm in rule(theorem):
             yield thm
 
+def bfs(axiom, rules, thm):
+    gens = [rule_gen(axiom, rules)]
+    
 
 AXIOM = [rule1,rule2,rule3,rule4]
 
